@@ -3,7 +3,7 @@ const searchBar=document.querySelector(".search-bar");
 const searchButton=document.querySelector(".search-button");
 const icon=document.querySelector(".icon");
 let selectedVal;
-let api;
+let api= `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}`;
 $(document).ready(function () {
   $("#temperatureUnit").change(function () {
       selectedVal = $("#temperatureUnit option:selected").val();
