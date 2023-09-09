@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="left-box">
+    <div class="search-box">
+        <input type="text" placeholder="Enter City" class="search-bar">
+        <select name="temperature" id="temperatureUnit">
+            <option value="Celcius">&deg;C</option>
+            <option value="Farenheit">&deg;F</option>
+        </select>
+        <button type="button" class="btn btn-outline-secondary search-button">Search<i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="error-msg">
+            Invalid city name
+        </div>
+    </div>
+    <div class="weather-details">
+        <h3>Weather Details</h3>
+        <p class="const">Feels like</p>
+        <p class="values feelsLike">25&deg;C</p>
+        <br>
+        <p class="const">Min Temperature</p>
+        <p class="values minTemp">22&deg;C</p>
+        <br>
+        <p class="const">Max Temperature</p>
+        <p class="values maxTemp">28&deg;C</p>
+        <br>
+        <p class="const">Description</p>
+        <p class="values description">Rain</p>
+        <br>
+        <p class="const">Humidity</p>
+        <p class="values humidity">80%</p>
+        <br>
+        <p class="const">Wind</p>
+        <p class="values wind">3m/s</p>
+        <br>
+    </div>
+    </div>
+    <div class="main-block">
+        <p class="temperature">21&deg;C</p>
+        <br>
+        <p class="place">Chengalpattu</p>
+        <img src="logos/rain.png" alt="rainy logo" class="icon">
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
